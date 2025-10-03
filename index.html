@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create a New Movie</h1>
+    <form action="/movies" method="POST">
+        <!-- Title -->
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <!-- Genre -->
+        <label for="genre">Genre:</label><br>
+        <select id="genre" name="genre" required>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Western">Western</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Romance">Romance</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+        </select><br><br>
+
+        <!-- Year -->
+        <label for="year">Year:</label><br>
+        <input type="number" id="year" name="year" required><br><br>
+
+        <!-- Submit -->
+        <button type="submit">Create Movie</button>
+    </form>
+</body>
+</html>
